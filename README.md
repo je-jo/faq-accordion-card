@@ -32,7 +32,7 @@ Users should be able to:
 ### Links
 
 - [Solution](https://github.com/je-jo/faq-accordion-card)
-- [Live Site](...)
+- [Live Site](https://je-jo.github.io/faq-accordion-card/)
 
 ## My process
 
