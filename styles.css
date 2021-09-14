@@ -1,0 +1,160 @@
+@import url(minireset.css);
+
+:root {
+    --verydark: hsl(238, 29%, 16%);
+    --softred: hsl(14, 88%, 65%);
+    --verydarkgreyish: hsl(237, 12%, 33%);
+    --darkgreyish: hsl(240, 6%, 50%);
+    --lightgreyish: hsl(240, 5%, 91%);
+}
+
+/* * {
+    outline: 1px solid red;
+} */
+
+html, body {
+    width: 100%;
+    height: 100%;
+    font-family: 'Kumbh Sans', sans-serif;
+    font-weight: 400;
+    font-size: 13px;
+    text-align: left;
+    color: var(--verydark);
+}
+
+.wrapper {
+    width: 100%;
+    background-color: #6462e7;
+    background-image: linear-gradient(0deg, #6462e7 0%, #af67e9 73%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    min-height: 100vh;
+}
+
+.center {
+    margin: 90px auto 20px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    max-width: 325px;
+    padding: 20px;
+    border-radius: 20px;
+}
+
+.image-container {
+    height: 100px;
+}
+
+.background-image {
+    height: 196px;
+    background-image: url(images/illustration-woman-online-mobile.svg);
+    transform: translateY(-65%);
+}
+
+.background-pattern {
+    height: 196px;
+    background-image: url(images/bg-pattern-mobile.svg);
+    background-repeat: no-repeat;
+    background-position: bottom center;
+    transform: translateY(-155%);
+}
+
+.text {
+
+}
+
+h1 {
+    margin: 10px auto 20px;
+    text-align: center;
+    font-size: 30px;
+    font-weight: 700;
+}
+
+p {
+    line-height: 1.5;
+    max-width: 90%;
+}
+
+.answer p {
+    margin-top: 10px;
+    font-size: 12px;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    height: max-content;
+}
+
+.question {
+   cursor: pointer;
+   transition: 0.3s;
+   display: flex;
+   justify-content: space-between;
+   align-items: baseline;
+}
+
+.question:hover {
+    color: var(--softred);
+}
+
+.answer {
+    color: var(--darkgreyish);
+    font-weight: 400;
+    margin-top: 0; 
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease-out;
+}
+
+.active {
+    font-weight: 700;
+}
+
+.active > img {
+    transition: all 0.3s ease-out;
+    transform: rotateX(180deg);
+}
+
+hr {
+    margin: 16px 0;
+    border: 1px solid var(--lightgreyish);
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 20px;
+    background-color: #6762e7;
+}
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+}
+
+.attribution a {
+    color: #fff;
+}
+
+@media screen and (min-width: 800px) {
+
+    .center {
+        flex-direction: row;
+        width: 90%;
+        max-width: 920px;
+        padding: 80px 100px;
+    }
+
+    .image {
+        width: 50%;
+    }
+
+    .text {
+        width: 50%;
+    }
+
+}
