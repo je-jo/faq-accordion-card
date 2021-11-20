@@ -46,11 +46,13 @@ Users should be able to:
 
 ### What I learned
 
-How to make a simple accordion, than add animation and icon. Also, I learned a lot about positioning of images.
+How to make a simple accordion, then add animation and icon. 
+
+Also, I learned a lot that positioning background images is hard. I've managed to make it look like the provided design but I'm pretty sure there are cleaner ways to accomplish this result.
 
 ### Continued development
 
-Look into accessible accordions.
+Look into accessible accordions and positioning.
 
 ### Useful resources
 
