@@ -8,9 +8,6 @@
     --lightgreyish: hsl(240, 5%, 91%);
 }
 
-/* * {
-    outline: 1px solid red;
-} */
 
 html, body {
     width: 100%;
@@ -20,6 +17,7 @@ html, body {
     font-size: 13px;
     text-align: left;
     color: var(--verydark);
+    overflow-y: hidden; /* because white space appears in mozzila */
 }
 
 .wrapper {
@@ -61,10 +59,6 @@ html, body {
     background-repeat: no-repeat;
     background-position: bottom center;
     transform: translateY(-155%);
-}
-
-.text {
-
 }
 
 h1 {
@@ -159,12 +153,9 @@ footer {
     .image-container {
         width: 50%;
         height: 359px;
-        /* width: 472px; */
     }
 
     .background-image {
-        /* height: 359px;
-        width: 472px; */
         height: 359px;
         background-image: url(images/illustration-woman-online-desktop.svg);
         background-repeat: no-repeat;
@@ -176,12 +167,9 @@ footer {
     .background-pattern {
        width: auto;
        height: 519px;
-        /* background-color: yellow; */
         background-image: url(images/bg-pattern-desktop.svg);
         background-size: auto;
         background-repeat: no-repeat;
-        /* transform: translateY(-155%);
-        transform: translate(-57%, -79%); */
         background-position: right;
         transform: translate(0, -85%);
     }

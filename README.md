@@ -27,7 +27,7 @@ Users should be able to:
 
 ### Screenshot
 
-![](images/name here.png)
+![](images/accordion.png)
 
 ### Links
 
@@ -48,7 +48,7 @@ Users should be able to:
 
 How to make a simple accordion, then add animation and icon. 
 
-Also, I learned a lot that positioning background images is hard. I've managed to make it look like the provided design but I'm pretty sure there are cleaner ways to accomplish this result.
+Also, I learned that positioning background images is hard. I've managed to make it look like the provided design but I'm pretty sure there are cleaner ways to accomplish this result.
 
 ### Continued development
 
