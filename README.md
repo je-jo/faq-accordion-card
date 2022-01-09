@@ -62,7 +62,7 @@ Look into accessible accordions and positioning.
 - [W3School's "How to create an accordion](https://www.w3schools.com/howto/howto_js_accordion.asp)
 - [This Stack Overflow thread](https://stackoverflow.com/questions/52186084/css-make-background-image-overlap-container) - Taught me how to make an image overlap its' container.
 - [Stacking images in a single grid cell](https://smolcss.dev/#smol-stack-layout)
-- [Using different images on different screen sizes directly in img tag](https://12daysofweb.dev/2021/image-display-elements/)
+- [Using different images on different screen sizes directly in img tag, or "art-directing"](https://12daysofweb.dev/2021/image-display-elements/)
 
 ## Author
 

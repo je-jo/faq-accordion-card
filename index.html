@@ -15,23 +15,18 @@
 <body>
   <div class="center">
     <div class="image-container">
-      <div class="background-image">
-        <img srcset="images/illustration-woman-online-desktop.svg 472w,
-                     images/illustration-woman-online-mobile.svg 266w" 
-             sizes="(min-width: 800px) 472px, 266px" 
-             src="images/illustration-woman-online-mobile.svg"
-             alt="illustration of woman looking at the large screen">
-      </div>
-      <div class="background-pattern">
-        <img srcset="images/bg-pattern-desktop.svg 966w,
-                     images/bg-pattern-mobile.svg 240w" 
-             sizes="(min-width: 800px) 966px, 240px" 
-             src="images/bg-pattern-mobile.svg"
-             alt="">
-      </div>
+      <picture class="background-image">
+        <source media="(min-width: 800px)" srcset="images/illustration-woman-online-desktop.svg">
+        <source srcset="images/illustration-woman-online-mobile.svg">
+        <img src="images/illustration-woman-online-mobile.svg" alt="illustration of woman looking at the large screen">
+      </picture>
+      <picture class="background-pattern">
+        <source media="(min-width: 800px)" srcset="images/bg-pattern-desktop.svg">
+        <source srcset="images/bg-pattern-mobile.svg">
+        <img src="images/bg-pattern-mobile.svg" alt="">
+      </picture>
       <div class="orange-box">
-        <img src="images/illustration-box-desktop.svg"
-             alt="orange box">
+        <img src="images/illustration-box-desktop.svg" alt="orange box">
       </div>
     </div>
     <div class="text">

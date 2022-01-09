@@ -8,9 +8,9 @@
     --lightgreyish: hsl(240, 5%, 91%);
 }
 
-* {
+/* * {
     outline: 1px solid salmon;
-}
+} */
 
 html {
     font-family: 'Kumbh Sans', sans-serif;
@@ -26,6 +26,7 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    gap: 5vh;
     padding-top: 20vh;
     background-color: #6462e7;
     background-image: linear-gradient(0deg, #6462e7 0%, #af67e9 73%);
@@ -51,6 +52,7 @@ body {
     height: 64px;   /* reduced container height so the images can overlap */
     margin-right: 24px;
     align-content: end; /* stacks images to bottom */
+    align-items: end;
 }
 
 .image-container > * {
@@ -65,18 +67,6 @@ body {
 .orange-box {
     display: none;
 }
-
-/* .background-image {
-    height: 196px;
-    background-image: url(images/illustration-woman-online-mobile.svg);
-}
-
-.background-pattern {
-    height: 196px;
-    background-image: url(images/bg-pattern-mobile.svg);
-    background-repeat: no-repeat;
-    background-position: bottom center;
-} */
 
 h1 {
     margin: 10px auto 20px;
@@ -97,8 +87,8 @@ p {
 
 img {
     display: block;
-    max-width: 100%;
-    height: max-content;
+    /* max-width: 100%;
+    height: max-content; */
 }
 
 .question {
@@ -151,64 +141,42 @@ footer {
 
 @media screen and (min-width: 800px) {
 
+    body {
+        padding-top: 15vh;
+    }
+
     .center {
         flex-direction: row;
         justify-content: space-between;
-        width: 90%;
-        max-width: 920px;
-        padding: 80px 100px 80px 0;
+        overflow-x: hidden;
+    }
+
+    .center > * {
+        flex: 1;
     }
 
     h1 {
         text-align: left;
     }
 
-  
 
     .image-container {
-        width: auto;
-        margin-right: 0; 
-        height: 100%;   
-        align-content: end; /* stacks images to bottom */
+        margin-right: 0;  
+        margin-left: -122px; 
+        align-content: normal; 
+        align-items: normal;
+        height: 100%;
     }
+
+    .background-pattern {
+        place-self: normal;
+    }
+    
 
     .orange-box {
         display: block;
-    }
-    
-  
-
-    /* .background-image {
-        height: 359px;
-        background-image: url(images/illustration-woman-online-desktop.svg);
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-position: bottom right;
-        transform: translate(0, 0);
-    }
-    
-    .background-pattern {
-       width: 410px;
-       height: 600px;
-       position: absolute;
-       background-image: url(images/bg-pattern-desktop.svg);
-       background-size: auto;
-       background-repeat: no-repeat;
-       background-position: right;
-       transform: translate(0, -60%);
-    }
-
-    .orange-box {
-        height: 191px;
-        width: 184px;
+        place-self: center start;
         position: absolute;
-         transform: translate(-41%, -391%); 
-        background-image: url(images/illustration-box-desktop.svg);
-        background-repeat: no-repeat;
-    } */ 
-
-    .text {
-        width: 40%;
-    } 
+    }
 
 }
