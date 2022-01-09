@@ -41,6 +41,7 @@ Users should be able to:
 - Semantic HTML5 markup
 - CSS custom properties
 - Flexbox
+- CSS Grid
 - Mobile-first workflow
 - Javascript
 
@@ -48,7 +49,9 @@ Users should be able to:
 
 How to make a simple accordion, then add animation and icon. 
 
-Also, I learned that positioning background images is hard. I've managed to make it look like the provided design but I'm pretty sure there are cleaner ways to accomplish this result.
+~~Also, I learned that positioning background images is hard. I've managed to make it look like the provided design but I'm pretty sure there are cleaner ways to accomplish this result.~~
+
+Updated laying out images with the grid stack technique described by Stephanie Eckless, linked below.
 
 ### Continued development
 
@@ -58,6 +61,8 @@ Look into accessible accordions and positioning.
 
 - [W3School's "How to create an accordion](https://www.w3schools.com/howto/howto_js_accordion.asp)
 - [This Stack Overflow thread](https://stackoverflow.com/questions/52186084/css-make-background-image-overlap-container) - Taught me how to make an image overlap its' container.
+- [Stacking images in a single grid cell](https://smolcss.dev/#smol-stack-layout)
+- [Using different images on different screen sizes directly in img tag](https://12daysofweb.dev/2021/image-display-elements/)
 
 ## Author
 

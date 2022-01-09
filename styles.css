@@ -8,9 +8,9 @@
     --lightgreyish: hsl(240, 5%, 91%);
 }
 
-/* * {
+* {
     outline: 1px solid salmon;
-} */
+}
 
 html {
     font-family: 'Kumbh Sans', sans-serif;
@@ -44,15 +44,12 @@ body {
     box-shadow: 0px 10px 15px 4px rgba(0,0,0,0.3); 
 }
 
-.center > * {
-}
-
 .image-container {
     width: 266px;
     display: grid;
     grid-template-areas: "stack";
-    margin-right: 26px; 
     height: 64px;   /* reduced container height so the images can overlap */
+    margin-right: 24px;
     align-content: end; /* stacks images to bottom */
 }
 
@@ -60,13 +57,13 @@ body {
     grid-area: stack;
   }
 
-.background-image {
-    place-self: start;
-    
-}
 
 .background-pattern {
     place-self: end;
+}
+
+.orange-box {
+    display: none;
 }
 
 /* .background-image {
@@ -106,7 +103,7 @@ img {
 
 .question {
    cursor: pointer;
-   transition: 0.3s;
+   transition: 0.2s;
    display: flex;
    justify-content: space-between;
    align-items: baseline;
@@ -122,7 +119,7 @@ img {
     margin-top: 0; 
     max-height: 0;
     overflow: hidden;
-    transition: max-height 0.3s ease-out;
+    transition: max-height 0.2s ease-out;
 }
 
 .active {
@@ -130,7 +127,7 @@ img {
 }
 
 .active > img {
-    transition: all 0.3s ease-out;
+    transition: all 0.2s ease-out;
     transform: rotateX(180deg);
 }
 
@@ -166,10 +163,20 @@ footer {
         text-align: left;
     }
 
+  
+
     .image-container {
-        width: 50%;
-        height: 359px;
-    } 
+        width: auto;
+        margin-right: 0; 
+        height: 100%;   
+        align-content: end; /* stacks images to bottom */
+    }
+
+    .orange-box {
+        display: block;
+    }
+    
+  
 
     /* .background-image {
         height: 359px;
